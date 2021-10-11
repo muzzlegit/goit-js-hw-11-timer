@@ -11,8 +11,8 @@ body {
   font-size: 50px;
   font-weight: 700;
   /* color: rgba(245, 12, 12, 0.884); */
-  color: rgb(136, 13, 13);
-  text-shadow: 4px 4px 2px rgba(255, 0, 0, 0.4);
+  color: rgb(19, 112, 112);
+  text-shadow: 1px 0px 4px rgba(255, 255, 255, 1);
 }
 .timer {
   display: flex;
