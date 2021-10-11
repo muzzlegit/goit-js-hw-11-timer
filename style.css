@@ -10,9 +10,9 @@ body {
 
   font-size: 50px;
   font-weight: 700;
-  color: rgb(255, 41, 41);
-
-  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  /* color: rgba(245, 12, 12, 0.884); */
+  color: rgb(136, 13, 13);
+  text-shadow: 4px 4px 2px rgba(255, 0, 0, 0.4);
 }
 .timer {
   display: flex;
