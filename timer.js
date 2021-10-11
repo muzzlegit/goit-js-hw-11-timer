@@ -53,7 +53,7 @@ function timerEnd(selector) {
 
 const timer = new CountdownTimer({
   selector: "#timer-1",
-  targetDate: new Date("Dec 31, 2021"),
+  targetDate: new Date("Jan 1, 2022"),
   // targetDate: new Date(2021,9,11,19,24,10),
   onTick: countdownRender,
   onTimerEnd: timerEnd,
