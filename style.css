@@ -1,39 +1,38 @@
 body {
-    background-color: gray;
-    color:black;
-    font-family: Roboto, sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-  }
+  background-color: gray;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
 .timer {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .field {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-.field:not(:last-child){
-    margin-right: 50px;
-} 
+.field:not(:last-child) {
+  margin-right: 50px;
+}
 .value {
-    padding: 2px 8px;
-    border-radius: 4px;
+  padding: 2px 8px;
+  border-radius: 4px;
 
-    color:#ffffff;
+  color: #ffffff;
 
-    background-color: #333232;
-    box-shadow: 0px 5px 10px 2px rgba(200, 200, 200, 0.2);
+  background-color: #333232;
+  box-shadow: 0px 5px 10px 2px rgba(200, 200, 200, 0.2);
 }
-.value.done{
-    color:#363636ec;
-
-} 
+.value.done {
+  color: #5e5d5dec;
+}
 .label {
-    font-size: 12px;
-    font-weight: 400; 
+  font-size: 12px;
+  font-weight: 400;
 }
