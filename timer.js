@@ -20,7 +20,6 @@ class CountdownTimer {
                 return;
             }
             this.onTick(this.selector,  this.getTimeElements(leftTime));
-            this.onLabelControl(this.selector,  this.getTimeElements(leftTime));
         }, 1000);
     };
 
@@ -45,14 +44,6 @@ function countdownRender(selector, {days, hours, mins, secs}) {
     timerEl.querySelector('span[data-value="secs"]').textContent = `${secs}`;
 }
 
-function countdownLabelRender(selector, {days, hours, mins, secs}) {
-    const timerEl = document.querySelector(`${selector}`);
-    timerEl.querySelector('span[data-label="days"]').textContent = days == 1? 'Day':'Days';
-    timerEl.querySelector('span[data-label="hours"]').textContent = hours == 1? 'Hour':'Hours';
-    timerEl.querySelector('span[data-label="mins"]').textContent = mins == 1? 'Minute':'Minutes';
-    timerEl.querySelector('span[data-label="secs"]').textContent = secs == 1? 'Second':'Seconds';
-}
-
 function timerEnd(selector) {
   const timerEl = document.querySelector(`${selector}`);
   (timerEl.querySelectorAll('.value')).forEach(element => element.classList.add('done'));
@@ -63,7 +54,6 @@ const timer = new CountdownTimer({
     targetDate: new Date('Oct 12, 2024'),
     // targetDate: new Date(2021,9,11,19,24,10),
     onTick: countdownRender,
-    onLabelControl: countdownLabelRender,
     onTimerEnd: timerEnd,
 
   });
